@@ -1,0 +1,153 @@
+.section-footer {
+    padding: 60px 0;
+    background-color: var(--secondery-bgc-black);
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+
+
+/* LOGO FOOTER*/
+
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: var(--primery-white-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    &__color--accent {
+        color: var(--accent-color)
+}
+}
+
+
+/* address */
+.address{
+
+&__item+ &__item {
+    margin-top: 9px;
+}
+
+&__map {
+    color: var(--primery-white-color);
+    line-height: 1.71;
+}
+
+&__contacts {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+    transition: color 250ms var(--cubik-timing);
+}
+
+&__contacts:hover,
+&__contacts:focus {
+    color: var(--accent-color);
+}
+
+&__map,
+&__contacts {
+    font-style: normal;
+    text-decoration: none;
+}
+}
+
+/*socials footer*/
+
+
+.socials {
+    margin-left: 70px;
+    &__title {
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+    
+            color: #FFFFFF;
+        }
+}
+
+
+
+.social-footer {
+    display: flex;
+    &__area+&__area {
+    margin-left: 10px;
+}
+&__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background-size: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: background 250ms var(--cubik-timing);
+}
+
+&__link:hover,
+&__link:focus {
+    background: var(--accent-color);
+}
+
+&__logo {
+    width: 20px;
+    height: 20px;
+    fill: var(--primery-white-color);
+}
+}
+
+
+/*subscription*/
+
+.subscription {
+    margin-left: 93px;
+}
+
+.form-subscription{
+    &__field {
+        display: flex;
+    }
+
+    &__input {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: var(--primery-white-color);
+
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding: 15px 16px;
+    }
+
+
+    &__label {
+        width: 358px;
+    }
+
+    &__input {
+        height: 50px;
+        width: 100%;
+        display: block;
+        outline: none
+    }
+
+    &__icon {
+        margin-left: 10px;
+        fill: var(--primery-white-color);
+    }
+}
+

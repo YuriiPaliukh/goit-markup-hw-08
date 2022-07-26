@@ -1,0 +1,92 @@
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+            width: calc((100% - 60px) / 3);
+            margin-right: 30px;
+            margin-bottom: 30px;
+    
+        }
+    
+    
+        &__item:nth-child(3n) {
+            margin-right: 0px;
+        }
+    
+        &__item:nth-last-child(-n + 3) {
+            margin-bottom: 0px;
+        }
+}
+
+
+/* project */
+
+
+.project {
+    display: block;
+    border: 1px solid #EEEEEE;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 250ms var(--cubik-timing);
+        &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    
+        &__image {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        &__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 63px 24px;
+            background: rgba(33, 150, 243, 0.9);
+    
+            transform: translatey(100%);
+            transition: transform 250ms var(--cubik-timing);
+        }
+    
+        &__text {
+            position: absolute;
+            font-size: 18px;
+            line-height: 1.56;
+            letter-spacing: 0.03em;
+            color: var(--primery-white-color)
+        }
+    
+        &:hover &__overlay {
+            transform: translatey(0);
+        }
+    
+        &__meta {
+            padding: 20px 24px;
+        }
+    
+        &__name {
+            margin-bottom: 4px;
+    
+            color: var(--title-text-color);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 0.06em;
+        }
+    
+        &__program {
+            font-size: 16px;
+            line-height: 1.88;
+            margin-bottom: 0px;
+        }
+    
+        &__name,
+        &__program {
+            display: flex;
+            justify-content: start;
+}
+
+}
