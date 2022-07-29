@@ -1,6 +1,11 @@
 .button {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
     border-radius: 4px;
-    padding: 10px 32px;
     border-color: var(--accent-color);
     border: none;
 
@@ -21,18 +26,24 @@
 &:focus {
     background-color: #188CE8;
 }
+
 &__subscription {
-    display: flex;
-    margin-left: 12px;
-    width: 200px;
-    justify-content: center;
-    padding: 0%;
+    position: relative;
+    margin-top: 20px;
+
+    @media screen and( min-width:1200px){
+    margin-left: 12px;   
+    margin-top: 0px;
+    } 
 }
+
+&__icon {
+    position: absolute;
+    right: 28px;
+    fill: var(--primery-white-color);
+}
+
 &__form {
-    display: block;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 30px;
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

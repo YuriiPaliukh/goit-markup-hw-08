@@ -4,33 +4,47 @@
 }
 
 .footer {
-    display: flex;
-    align-items: baseline;
+    
+@media screen and(max-width:1199px){
+    text-align: center;
+}
+    
+    @media screen and(min-width:1200px) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 
 
 /* LOGO FOOTER*/
+.page-header__logo{
+padding: 0px;}
 
-.logo-footer {
-    display: inline-block;
-    margin-bottom: 20px;
-
+.logo__footer--accent{
+  
     color: var(--primery-white-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     text-decoration: none;
-
-    &__color--accent {
-        color: var(--accent-color)
-}
+    
+    @media screen and(min-width:1200px) {
+            font-size: 26px;
+            line-height: 1.19;
+        }
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 
 
 /* address */
 .address{
+    margin-top: 20px;
 
 &__item+ &__item {
     margin-top: 9px;
@@ -63,13 +77,18 @@
 
 
 .socials {
-    margin-left: 70px;
     &__title {
             margin-bottom: 20px;
             font-weight: 700;
             text-transform: uppercase;
     
             color: #FFFFFF;
+        }
+        @media screen and(min-width:1200px ){
+        margin-left: 70px;
+        }
+        @media screen and(max-width:767px) {
+        margin-top: 60px;
         }
 }
 
@@ -80,6 +99,11 @@
     &__area+&__area {
     margin-left: 10px;
 }
+
+@media screen and(max-width:767px){
+    justify-content: center;
+}
+
 &__link {
     display: flex;
     width: 44px;
@@ -108,12 +132,22 @@
 /*subscription*/
 
 .subscription {
+
+    @media screen and(max-width:767px) {
+    margin-top: 60px;
+    }
+
+    @media screen and(min-width:1200px) {
     margin-left: 93px;
+        }
 }
 
 .form-subscription{
     &__field {
-        display: flex;
+        
+        @media screen and(min-width:1200px) {
+                display: flex;
+            }
     }
 
     &__input {
@@ -145,9 +179,6 @@
         outline: none
     }
 
-    &__icon {
-        margin-left: 10px;
-        fill: var(--primery-white-color);
-    }
+    
 }
 
