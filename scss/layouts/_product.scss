@@ -5,14 +5,14 @@
 
 .image {
     display: flex;
+    margin: 0px -15px;
 }
 
 .product {
     margin-left: auto;
     margin-right: auto;
-    &+& {
-            margin-left: 30px;
-        }
+    margin: 0px 15px;
+
     
         &__thumb {
             position: relative;

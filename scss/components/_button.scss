@@ -28,8 +28,8 @@
 }
 
 &__subscription {
-    position: relative;
     margin-top: 20px;
+    padding: 10px 28px;
 
     @media screen and( min-width:1200px){
     margin-left: 12px;   
@@ -38,8 +38,7 @@
 }
 
 &__icon {
-    position: absolute;
-    right: 28px;
+  margin-left: 12px;
     fill: var(--primery-white-color);
 }
 

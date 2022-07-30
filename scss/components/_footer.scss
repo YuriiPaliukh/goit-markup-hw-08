@@ -4,17 +4,24 @@
 }
 
 .footer {
-    
-@media screen and(max-width:1199px){
     text-align: center;
-}
+    
+    @media screen and(min-width:1200px){
+        text-align: start; }
     
     @media screen and(min-width:1200px) {
         display: flex;
-        align-items: baseline;
-    }
+        align-items: center;
+        justify-content: space-between; }
 }
 
+
+.tablet-menu{
+    @media screen and(min-width:768px){
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline; }
+}
 
 
 /* LOGO FOOTER*/
@@ -77,31 +84,29 @@ padding: 0px;}
 
 
 .socials {
+    @media screen and(min-width:1200px) {
+            margin-left: 86px; }
+
     &__title {
+        margin-top: 60px;
             margin-bottom: 20px;
             font-weight: 700;
             text-transform: uppercase;
     
             color: #FFFFFF;
-        }
-        @media screen and(min-width:1200px ){
-        margin-left: 70px;
-        }
-        @media screen and(max-width:767px) {
-        margin-top: 60px;
-        }
-}
 
+        @media screen and(min-width:768px ){
+        margin-top: 0px; }
+    }   
+}
 
 
 .social-footer {
     display: flex;
-    &__area+&__area {
-    margin-left: 10px;
-}
-
-@media screen and(max-width:767px){
     justify-content: center;
+    margin: 0px -5px;
+    &__area {
+    margin: 0px 5px;
 }
 
 &__link {
@@ -132,31 +137,31 @@ padding: 0px;}
 /*subscription*/
 
 .subscription {
-
-    @media screen and(max-width:767px) {
-    margin-top: 60px;
-    }
+margin-top: 60px;
 
     @media screen and(min-width:1200px) {
     margin-left: 93px;
-        }
+    margin-top: 0px; }
 }
 
 .form-subscription{
     &__field {
         
         @media screen and(min-width:1200px) {
-                display: flex;
+                display: flex;}
             }
-    }
 
     &__input {
+        display: flex;
+        align-items: center;
+
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
+        height: 50px;
+        width: 450px;
+        outline: none;
 
-        display: flex;
-        align-items: center;
         letter-spacing: 0.03em;
         color: var(--primery-white-color);
 
@@ -165,20 +170,8 @@ padding: 0px;}
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         padding: 15px 16px;
+
+        @media screen and(min-width:1200px){
+            width: 100%; }
     }
-
-
-    &__label {
-        width: 358px;
-    }
-
-    &__input {
-        height: 50px;
-        width: 100%;
-        display: block;
-        outline: none
-    }
-
-    
 }
-
