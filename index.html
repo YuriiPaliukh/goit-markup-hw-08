@@ -27,10 +27,10 @@
             <li class="site-nav__item">
               <a href="#" class="site-nav__link link">Контакты</a>
             </li>
-          </ul>
-        </nav>
+           </ul>
+            </nav>
 
-        <ul class="auth-nav list">
+           <ul class="auth-nav list">
           <li class="auth-nav__item">
             <a class="auth-nav__contact" href="mailto:info@devstudio.com">
               <svg class="auth-nav__icon" aria-hidden="true" width="16" height="12">
@@ -47,7 +47,22 @@
               +38 096 111 11 11
             </a>
           </li>
-        </ul>
+           </ul>
+          <button 
+        type="button" 
+        class="menu-button" 
+        data-menu-button
+        aria-controls="menu-container"
+        >
+            <svg 
+            width="40" 
+            height="40"
+            aria-label="перемикач головного меню">
+              <use class="menu-button__close" href="./images/icons.svg.svg#close-burger"></use>
+              <use class="menu-button__burger" href="./images/icons.svg.svg#burger"></use>
+            </svg>
+          </button>
+  
       </div>
     </header>
 
@@ -534,5 +549,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
