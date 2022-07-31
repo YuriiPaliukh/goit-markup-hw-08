@@ -765,18 +765,6 @@ address {
   }
 }
 
-/* .page-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ECECEC;
-
-    &__nav {
-        display: flex;
-        align-items: center;
-    }
-}
-*/
 .page-header {
   display: flex;
   align-items: center;
@@ -788,35 +776,6 @@ address {
   align-items: center;
 }
 
-/*logo*/
-/*
-.logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-
-    color: #000000;
-
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-
-    &__color--accent {
-        color: var(--accent-color);
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        text-decoration: none;
-    }
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-}
-*/
 .logo {
   margin: 16px 0px;
   color: var(--accent-color);
@@ -850,63 +809,6 @@ address {
   color: var(--accent-color);
 }
 
-/*
-.site-nav {
-    display: flex;
-    transition: color 250ms var(--cubik-timing);
-    margin-left: 93px;
-
-    &__link::after {
-        content: '';
-
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: var(--accent-color);
-
-        opacity: 0;
-    }
-
-    &__item+&__item {
-        margin-left: 50px;
-    }
-
-    &__link {
-        display: none;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        color: var(--title-text-color);
-
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-
-        position: relative;
-        transition: color 250ms var(--cubik-timing);
-    }
-
-    &__link:hover,
-    &__link:focus {
-        color: var(--accent-color);
-    }
-}
-
-
-
-
-.current {
-    color: var(--accent-color);
-
-    &::after {
-        opacity: 1;
-    }
-}
-*/
-/* NAV */
 .site-nav {
   display: none;
   margin-left: 93px;
@@ -934,7 +836,7 @@ address {
 }
 .site-nav__link {
   padding-top: 32px;
-  padding-bottom: 33px;
+  padding-bottom: 29px;
   color: var(--title-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -942,9 +844,9 @@ address {
   position: relative;
   transition: color 250ms var(--cubik-timing);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .site-nav__link {
-    padding-bottom: 29px;
+    padding-bottom: 33px;
   }
 }
 .site-nav__link:hover, .site-nav__link:focus {
@@ -963,7 +865,7 @@ address {
   display: none;
   align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .auth-nav {
     flex-direction: column;
     align-items: start;
@@ -978,7 +880,7 @@ address {
 .auth-nav__item + .auth-nav__item {
   margin-left: 30px;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .auth-nav__item + .auth-nav__item {
     margin-left: 0px;
     margin-top: 10px;
@@ -995,7 +897,7 @@ address {
   text-decoration: none;
   transition: color 250ms var(--cubik-timing);
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .auth-nav__contact {
     padding: 0px;
   }
@@ -1204,7 +1106,7 @@ address {
   font-size: 16px;
   line-height: 1.25;
   height: 50px;
-  width: 450px;
+  width: 100%;
   outline: none;
   letter-spacing: 0.03em;
   color: var(--primery-white-color);
@@ -1214,9 +1116,22 @@ address {
   border-radius: 4px;
   padding: 15px 16px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .form-subscription__input {
-    width: 100%;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-subscription__label {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-subscription__label {
+    width: 358px;
   }
 }
 
@@ -1384,7 +1299,7 @@ address {
   background-position: center;
 }
 .section-hero__title {
-  width: 360px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
@@ -1397,6 +1312,11 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .section-hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section-hero__title {
     width: 693px;
@@ -1405,13 +1325,11 @@ address {
   }
 }
 
-.section-features__list {
-  margin: -15px;
-}
 @media screen and (min-width: 768px) {
   .section-features__list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1420,12 +1338,10 @@ address {
   }
 }
 
-.feature {
-  margin: 15px;
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .feature {
     width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1465,9 +1381,13 @@ address {
   line-height: 1.71;
 }
 
-@media screen and (max-width: 1200px) {
+.product-section {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
   .product-section {
-    display: none;
+    display: block;
+    padding-top: 0px;
   }
 }
 
@@ -1503,13 +1423,11 @@ address {
   background: var(--section-bgc-grey);
 }
 
-.team {
-  margin: -15px;
-}
 @media screen and (min-width: 768px) {
   .team {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1519,7 +1437,6 @@ address {
 }
 
 .card-team {
-  margin: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primery-white-color);
@@ -1527,6 +1444,7 @@ address {
 @media screen and (min-width: 768px) {
   .card-team {
     width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 @media screen and (max-width: 767px) {

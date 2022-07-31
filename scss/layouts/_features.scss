@@ -1,10 +1,10 @@
 .section-features {
     &__list{
-        margin: -15px;
 
          @media screen and(min-width:768px) {
             display: flex;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+            margin: -15px; }
     
         @media screen and(min-width:1200px) {
             flex-wrap: nowrap; }
@@ -12,10 +12,11 @@
 }
 
 .feature{ 
-    margin: 15px;
+    
 
-    @media screen and(min-width:768px) and (max-width:1200px) {
-        width: calc((100% - 2*30px) / 2);}
+    @media screen and(min-width:768px) {
+        width: calc((100% - 2*30px) / 2);
+        margin: 15px;}
 
     &:not(:last-child) {
         
