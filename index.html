@@ -13,11 +13,17 @@
 
     <header>
       <div class="page-header container">
-        <nav class="page-header__nav">
+       <nav class="page-header__nav">     
           <a href="./index.html" lang="en" class="logo page-header__logo">
             Web<span class="logo__header--accent">Studio</span>
           </a>
-          <ul class="site-nav list">
+
+          <div 
+          class="menu-container"
+          id="menu-container"
+          data-menu>
+
+            <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link link current">Студия</a>
             </li>
@@ -28,7 +34,6 @@
               <a href="#" class="site-nav__link link">Контакты</a>
             </li>
            </ul>
-            </nav>
 
            <ul class="auth-nav list">
           <li class="auth-nav__item">
@@ -40,7 +45,7 @@
             </a>
           </li>
           <li class="auth-nav__item">
-            <a class="auth-nav__contact" href="tel:+380961111111">
+            <a class="auth-nav__contact auth-nav__contact--phone" href="tel:+380961111111">
               <svg class="auth-nav__icon" aria-hidden="true" width="10" height="16">
                 <use href="./images/icons.svg.svg#icon-smartphone"></use>
               </svg>
@@ -48,21 +53,29 @@
             </a>
           </li>
            </ul>
+           <ul class="socials-list list">
+            <li class="socials-list__item link"><a href="#">Instagram</a></li>
+            <li class="socials-list__item link"><a href="#">Twitter</a></li>
+            <li class="socials-list__item link"><a href="#">Facebook</a></li>
+            <li class="socials-list__item link"><a href="#">LinkedIn</a></li>
+           </ul>
+          </div>
+          
           <button 
-        type="button" 
-        class="menu-button" 
-        data-menu-button
-        aria-controls="menu-container"
-        >
-            <svg 
-            width="40" 
-            height="40"
-            aria-label="перемикач головного меню">
+             type="button" 
+             class="menu-button" 
+             data-menu-button
+             aria-controls="menu-container"
+             >
+              <svg 
+                 width="40" 
+                 height="40"
+                 aria-label="перемикач головного меню">
               <use class="menu-button__close" href="./images/icons.svg.svg#close-burger"></use>
               <use class="menu-button__burger" href="./images/icons.svg.svg#burger"></use>
             </svg>
           </button>
-  
+        </nav>  
       </div>
     </header>
 
