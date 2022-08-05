@@ -122,6 +122,7 @@ transition: color 250ms var(--cubik-timing);
 .auth-nav {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 302px;
     
 
     @media screen and(min-width:768px) {
@@ -204,13 +205,15 @@ transition: color 250ms var(--cubik-timing);
     }
 
 
+    
     &__icon {
+        display: none;
         margin-right: 10px;
         fill: var(--primary-text-color);
         transition: fill 250ms var(--cubik-timing);
 
-        @media screen and(max-width:767px){
-            display: none;
+        @media screen and(min-width:768px){
+            display: block;
         }
     }
 }
@@ -221,12 +224,12 @@ transition: color 250ms var(--cubik-timing);
 .socials-list{
 display: flex;
 flex-wrap: wrap;
-
+margin-top: 64px;
 
 @media screen and(min-width:768px){
     display: none; }
    &__item{
-font-weight: 500;
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
@@ -235,7 +238,12 @@ font-weight: 500;
     color: var(--accent-color);
 }
 
-&__item+&__item{
-   margin-left: 20px;
-     }
+&__item:not(:first-child){
+    margin-left: 10px;
+ }
+
+ &__item:not(:last-child){
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
+}

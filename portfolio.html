@@ -12,11 +12,17 @@
     <!--ШАПКА-->
   <header>
       <div class="page-header container">
-        <nav class="page-header__nav">
-          <a href="./index.html" lang="en" class="logo">
+       <nav class="page-header__nav">     
+          <a href="./index.html" lang="en" class="logo page-header__logo">
             Web<span class="logo__header--accent">Studio</span>
           </a>
-          <ul class="site-nav list">
+
+          <div 
+          class="menu-container"
+          id="menu-container"
+          data-menu>
+
+            <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link link ">Студия</a>
             </li>
@@ -26,10 +32,9 @@
             <li class="site-nav__item">
               <a href="#" class="site-nav__link link">Контакты</a>
             </li>
-          </ul>
-        </nav>
+           </ul>
 
-        <ul class="auth-nav list">
+           <ul class="auth-nav list">
           <li class="auth-nav__item">
             <a class="auth-nav__contact" href="mailto:info@devstudio.com">
               <svg class="auth-nav__icon" aria-hidden="true" width="16" height="12">
@@ -39,14 +44,37 @@
             </a>
           </li>
           <li class="auth-nav__item">
-            <a class="auth-nav__contact" href="tel:+380961111111">
+            <a class="auth-nav__contact auth-nav__contact--phone" href="tel:+380961111111">
               <svg class="auth-nav__icon" aria-hidden="true" width="10" height="16">
                 <use href="./images/icons.svg.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
-        </ul>
+           </ul>
+           <ul class="socials-list list">
+            <li class="socials-list__item"><a class="link" href="#">Instagram</a></li>
+            <li class="socials-list__item"><a class="link" href="#">Twitter</a></li>
+            <li class="socials-list__item"><a class="link" href="#">Facebook</a></li>
+            <li class="socials-list__item"><a class="link" href="#">LinkedIn</a></li>
+           </ul>
+          </div>
+          
+          <button 
+             type="button" 
+             class="menu-button" 
+             data-menu-button
+             aria-controls="menu-container"
+             >
+              <svg 
+                 width="40" 
+                 height="40"
+                 aria-label="перемикач головного меню">
+              <use class="menu-button__close" href="./images/icons.svg.svg#close-burger"></use>
+              <use class="menu-button__burger" href="./images/icons.svg.svg#burger"></use>
+            </svg>
+          </button>
+        </nav>  
       </div>
     </header>
 
@@ -250,11 +278,13 @@
 
     <!--Підвал-->
 
- <footer class="section-footer">
+    <footer class="section-footer">
       <div class="container footer">
+        <div class="tablet-menu">
         <div class="footer-nav">
           <a href="./index.html" lang="en" class="logo">
             Web<span class="logo__footer--accent">Studio</span>
+
           <address>
             <ul class="address list">
               <li class="address__item">
@@ -308,6 +338,7 @@
             </li>
           </ul>
         </div>
+        </div>
         <div class="subscription">
           <h3 class="socials__title">Подпишитесь на рассылку</h3>
           <form class="form-subscription">
@@ -319,7 +350,7 @@
                 name="useremail"
                 placeholder="E-mail" />
               </label>
-             <button type="submit" class="button button__subscription">Подписаться
+             <button type="submit" class="button button__subscription">Підписатися
               <svg class="button__icon" aria-hidden="true" width="24" height="24">
                 <use href="./images/icons.svg.svg#icon-send"></use>
               </svg>
@@ -329,5 +360,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>

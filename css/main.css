@@ -881,6 +881,7 @@ address {
 .auth-nav {
   display: flex;
   flex-direction: column-reverse;
+  margin-top: 302px;
 }
 @media screen and (min-width: 768px) {
   .auth-nav {
@@ -953,13 +954,14 @@ address {
   fill: var(--accent-color);
 }
 .auth-nav__icon {
+  display: none;
   margin-right: 10px;
   fill: var(--primary-text-color);
   transition: fill 250ms var(--cubik-timing);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .auth-nav__icon {
-    display: none;
+    display: block;
   }
 }
 
@@ -967,6 +969,7 @@ address {
 .socials-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 64px;
 }
 @media screen and (min-width: 768px) {
   .socials-list {
@@ -981,8 +984,12 @@ address {
   text-decoration: none;
   color: var(--accent-color);
 }
-.socials-list__item + .socials-list__item {
-  margin-left: 20px;
+.socials-list__item:not(:first-child) {
+  margin-left: 10px;
+}
+.socials-list__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .button {
@@ -1795,21 +1802,20 @@ address {
   margin-left: auto;
   margin-right: auto;
   padding: 48px 40px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }
 .menu-container.is-open {
   display: flex;
 }
-@media screen and (max-width: 767px) {
-  .menu-container {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-  }
-}
 @media screen and (min-width: 768px) {
   .menu-container {
+    display: flex;
+    flex-direction: row;
+    position: inherit;
     flex-grow: 1;
     align-items: center;
     height: 100%;

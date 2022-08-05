@@ -29,19 +29,21 @@
     margin-left: auto;
     margin-right: auto;
     padding: 48px 40px;
-
-   &.is-open {
-      display: flex; }
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    
+    &.is-open {
+        display: flex;
+        }
    
 
-    @media screen and(max-width:767px){
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%; }
-
-    @media screen and(min-width:768px) {
+    @media screen and(min-width:768px){
+        display: flex;
+        flex-direction: row;
+        position: inherit;
         flex-grow: 1;
         align-items: center; 
         height: 100%; 
