@@ -1396,15 +1396,40 @@ address {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/office.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/office480x1.jpg");
   background-color: #C4C4C4;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (max-width: 767.5px) {
   .section-hero {
-    background-image: url("../images/office2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/office480x1.jpg");
+  }
+}
+@media (max-width: 767.5px) and (min-device-pixel-ratio: 2), (max-width: 767.5px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767.5px) and (min-resolution: 192dpi), (max-width: 767.5px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/office480x2.jpg");
+  }
+}
+@media (max-width: 1199.5px) {
+  .section-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/office756x1.jpg");
+  }
+}
+@media (max-width: 1199.5px) and (min-device-pixel-ratio: 2), (max-width: 1199.5px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199.5px) and (min-resolution: 192dpi), (max-width: 1199.5px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/office756x2.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .section-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/office1200x1.jpg");
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/office1200x2.jpg");
   }
 }
 .section-hero__title {
@@ -1823,6 +1848,11 @@ address {
 .menu-container.is-open {
   display: flex;
   z-index: 10;
+}
+@media screen and (max-width: 767.5px) {
+  .menu-container {
+    min-height: 796px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-container {

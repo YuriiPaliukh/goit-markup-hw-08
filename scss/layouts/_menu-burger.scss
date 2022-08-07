@@ -31,7 +31,6 @@
     justify-content: space-between;
     background: var(--primery-white-color);
     height: 100vh;
-    min-height: 796px;
     margin-left: auto;
     margin-right: auto;
     padding: 48px 40px;
@@ -46,6 +45,9 @@
         display: flex;
         z-index: 10;
         }
+     
+    @media screen and(max-width:767.5px){
+    min-height: 796px; }
    
 
     @media screen and(min-width:768px){
