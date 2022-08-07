@@ -153,7 +153,14 @@
           <ul class="image list">
             <li class="product">
               <div class="product__thumb">
-                <img src="./images/img_6.jpg" alt="набор тексту на клавиатуре" width="370" />
+                <picture>
+                <source 
+                     srcset="
+                    ./images/work370x1.jpg 1x,
+                    ./images/work370x2.jpg 2x"
+                    type="image/jpeg">
+                <img src="./images/work370x1.jpg" alt="набор тексту на клавиатуре" width="370" />
+                </picture>
                 <div class="product__text">
                   <p>Десктопные приложения</p>
                 </div>
@@ -161,7 +168,14 @@
             </li>
             <li class="product">
               <div class="product__thumb">
-                <img src="./images/img_5.jpg" alt="смартфон в руке" width="370" />
+                <picture>
+                <source 
+                     srcset="
+                    ./images/leptopwork370x1.jpg 1x,
+                    ./images/leptopwork370x2.jpg 2x"
+                    type="image/jpeg">
+                <img src="./images/leptopwork370x1.jpg" alt="смартфон в руке" width="370" />
+                </picture>
                 <div class="product__text">
                   <p>Мобильные приложения</p>
                 </div>
@@ -169,7 +183,14 @@
             </li>
             <li class="product">
               <div class="product__thumb">
-                <img src="./images/img_0.jpg" alt="планшет з гамой цветов" width="370" />
+                <picture>
+                <source 
+                     srcset="
+                    ./images/color370x1.jpg 1x,
+                    ./images/color370x2.jpg 2x"
+                    type="image/jpeg">
+                <img src="./images/color370x1.jpg" alt="планшет з гамой цветов" width="370" />
+                </picture>
                 <div class="product__text">
                   <p>Дизайнерские решения</p>
                 </div>
@@ -186,7 +207,14 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team list">
             <li class="card-team">
-              <img src="./images/img_1.jpg" alt="Работник 1" />
+               <picture>
+                <source 
+                     srcset="
+                    ./images/demynenko450x1.jpg 1x,
+                    ./images/demynenko450x2.jpg 2x"
+                    type="image/jpeg">
+              <img src="./images/demynenko450x1.jpg" alt="Работник 1" />
+               </picture>
               <div class="card-team__title">
                 <h3 class="card-team__name">Игорь Демьяненко</h3>
                 <p lang="en" class="card-team__position">Product Designer</p>
@@ -223,7 +251,14 @@
               </div>
             </li>
             <li class="card-team">
-              <img src="./images/img_2.jpg" alt="Работник 2" />
+              <picture>
+                <source 
+                     srcset="
+                    ./images/repuna450x1.jpg 1x,
+                    ./images/repuna450x2.jpg 2x"
+                    type="image/jpeg">
+                 <img src="./images/repuna450x1.jpg" alt="Работник 2" />
+              </picture>
               <div class="card-team__title">
                 <h3 class="card-team__name">Ольга Репина</h3>
                 <p lang="en" class="card-team__position">Frontend Developer</p>
@@ -260,7 +295,14 @@
               </div>
             </li>
             <li class="card-team">
-              <img src="./images/img_3.jpg" alt="Работник 3" />
+              <picture>
+                <source 
+                     srcset="
+                    ./images/tarasov450x1.jpg 1x,
+                    ./images/tarasov450x2.jpg 2x"
+                    type="image/jpeg">
+                 <img src="./images/tarasov450x1.jpg" alt="Работник 3" />
+              </picture>
               <div class="card-team__title">
                 <h3 class="card-team__name">Николай Тарасов</h3>
                 <p lang="en" class="card-team__position">Marketing</p>
@@ -297,7 +339,14 @@
               </div>
             </li>
             <li class="card-team">
-              <img src="./images/img_4.jpg" alt="Работник 4" />
+              <picture>
+                <source 
+                     srcset="
+                    ./images/ermakov450x1.jpg 1x,
+                    ./images/ermakov450x2.jpg 2x"
+                    type="image/jpeg">
+                 <img src="./images/ermakov450x1.jpg" alt="Работник 4" />
+              </picture>
               <div class="card-team__title">
                 <h3 class="card-team__name">Михаил Ермаков</h3>
                 <p lang="en" class="card-team__position">UI Designer</p>
@@ -562,6 +611,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
