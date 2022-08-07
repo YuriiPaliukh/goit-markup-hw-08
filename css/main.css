@@ -1448,7 +1448,7 @@ address {
     margin: 15px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .feature:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1551,7 +1551,7 @@ address {
     margin: 15px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .card-team:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1653,7 +1653,7 @@ address {
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: -15px;
 }
 .filter__item {
@@ -1664,6 +1664,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .filter {
+    margin-bottom: 30px;
     justify-content: center;
   }
 }
@@ -1695,20 +1696,21 @@ address {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.card-set {
-  flex-wrap: wrap;
-  margin: -15px;
-}
 @media screen and (min-width: 768px) {
   .card-set {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
-.card-set__item {
-  margin: 15px;
+@media screen and (max-width: 767.5px) {
+  .card-set__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .card-set__item {
+    margin: 15px;
     width: calc((100% - 60px) / 2);
   }
 }
