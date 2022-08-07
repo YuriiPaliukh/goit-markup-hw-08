@@ -797,6 +797,7 @@ address {
   font-size: 24px;
   line-height: 1.17;
   text-decoration: none;
+  transition: color 250ms var(--cubik-timing);
 }
 @media screen and (min-width: 1200px) {
   .logo__header--accent {
@@ -881,7 +882,6 @@ address {
 .auth-nav {
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 302px;
 }
 @media screen and (min-width: 768px) {
   .auth-nav {
@@ -1780,9 +1780,14 @@ address {
   padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 20;
+  transition: fill 250ms var(--cubik-timing);
 }
 .menu-button__close {
   display: none;
+}
+.menu-button:hover {
+  fill: var(--accent-color);
 }
 .menu-button.is-open .menu-button__close {
   display: block;
@@ -1800,13 +1805,13 @@ address {
   flex-direction: column;
   justify-content: space-between;
   background: var(--primery-white-color);
-  height: 798px;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   padding: 48px 40px;
   display: none;
   position: absolute;
-  top: 100%;
+  top: 0%;
   left: 0;
   width: 100%;
 }

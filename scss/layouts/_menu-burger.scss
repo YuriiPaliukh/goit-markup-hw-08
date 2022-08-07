@@ -4,10 +4,15 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    z-index: 20;
+    transition: fill 250ms var(--cubik-timing);
+
 
     &__close {
-        display: none;
-    }
+        display: none; }
+
+    &:hover {
+        fill:var(--accent-color); }    
 
     &.is-open &__close {
         display: block;
@@ -25,15 +30,16 @@
     flex-direction: column;
     justify-content: space-between;
     background: var(--primery-white-color);
-    height: 798px;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding: 48px 40px;
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0%;
     left: 0;
     width: 100%;
+
     
     &.is-open {
         display: flex;
