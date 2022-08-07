@@ -1402,6 +1402,11 @@ address {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: url("../images/office2x.jpg");
+  }
+}
 .section-hero__title {
   width: 100%;
   margin-right: auto;
